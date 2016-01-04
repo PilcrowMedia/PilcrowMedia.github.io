@@ -90,8 +90,8 @@ body {
   @media only screen and (min-width: 500px) {
     body {
       font-size: 1.2em;
-      border: 5px solid black;
-      margin: 1em; } }
+      border: 15px solid black;
+      margin: 0em; } }
 
 .logo-container {
   width: 5em;
