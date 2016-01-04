@@ -116,6 +116,9 @@ body {
 .venture-container {
   font-size: .9em;
   font-weight: 600; }
+  @media only screen and (min-width: 500px) {
+    .venture-container {
+      font-size: 1em; } }
 
 .three-col-container {
   margin-bottom: 4em;
@@ -167,11 +170,14 @@ body {
       justify-content: center;
       -ms-flex-pack: center; } }
 
+@media only screen and (min-width: 500px) {
+  .col1 {
+    margin: 0 2em; } }
+
 .col1 + .col1 {
   margin-top: 2em; }
   @media only screen and (min-width: 500px) {
     .col1 + .col1 {
-      margin-left: 4em;
       margin-top: 0; } }
 
 .contact-info-container {
@@ -181,8 +187,9 @@ body {
   margin-bottom: 0em;
   line-height: 1.6; }
   @media only screen and (min-width: 500px) {
-    .contact-info-container .col1 + .col1 {
-      margin-left: 8em; } }
+    .contact-info-container .col1 {
+      margin: 0 4.5em;
+      font-size: .75em; } }
 
 /* ==========================================================================
    Helper classes

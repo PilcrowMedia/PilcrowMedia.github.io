@@ -153,6 +153,9 @@ body {
 .venture-container {
 	font-size: .9em;
     font-weight: 600;
+      @include MQ(S) {
+        font-size: 1em;
+    }
 
 }
 
@@ -170,13 +173,16 @@ body {
 }
 
 .col1 {
+  @include MQ(S) {
+    margin: 0 2em;
+  }
+
 }
 
 .col1 + .col1 {
   margin-top: 2em;
 
   @include MQ(S) {
-    margin-left: 4em;
     margin-top: 0;
   }
 }
@@ -189,12 +195,15 @@ body {
   margin-bottom: 0em;
   line-height: 1.6;
 
-  .col1 + .col1 {
+    .col1 {
 
-  @include MQ(S) {
-    margin-left: 8em;
+        @include MQ(S) {
+    margin:0 4.5em;
+      font-size: .75em;
+
   }
-}
+    }
+
 
 }
 
