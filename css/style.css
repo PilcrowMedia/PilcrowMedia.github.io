@@ -115,6 +115,9 @@ body {
 
 .venture-container {
   font-size: .9em;
+  font-weight: 600; }
+
+.three-col-container {
   margin-bottom: 4em;
   display: -webkit-box;
   display: -moz-box;
@@ -143,7 +146,7 @@ body {
   flex-direction: column;
   -ms-flex-direction: column; }
   @media only screen and (min-width: 500px) {
-    .venture-container {
+    .three-col-container {
       -webkit-box-orient: horizontal;
       -moz-box-orient: horizontal;
       box-orient: horizontal;
@@ -164,18 +167,22 @@ body {
       justify-content: center;
       -ms-flex-pack: center; } }
 
-.venture {
-  font-weight: 600; }
-
-.venture + .venture {
+.col1 + .col1 {
   margin-top: 2em; }
   @media only screen and (min-width: 500px) {
-    .venture + .venture {
+    .col1 + .col1 {
       margin-left: 4em;
       margin-top: 0; } }
 
 .contact-info-container {
-  font-size: .8em; }
+  font-size: .8em;
+  font-weight: 400;
+  margin-top: 10em;
+  margin-bottom: 0em;
+  line-height: 1.6; }
+  @media only screen and (min-width: 500px) {
+    .contact-info-container .col1 + .col1 {
+      margin-left: 8em; } }
 
 /* ==========================================================================
    Helper classes

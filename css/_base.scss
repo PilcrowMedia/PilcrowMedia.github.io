@@ -152,9 +152,14 @@ body {
 
 .venture-container {
 	font-size: .9em;
-	margin-bottom: 4em;
-	@include display(flex);
-	@include justify-content(space-between);
+    font-weight: 600;
+
+}
+
+.three-col-container {
+    margin-bottom: 4em;
+  @include display(flex);
+  @include justify-content(space-between);
   @include flex-direction(column);
 
   @include MQ(S) {
@@ -164,11 +169,10 @@ body {
 
 }
 
-.venture {
-    font-weight: 600;
+.col1 {
 }
 
-.venture + .venture {
+.col1 + .col1 {
   margin-top: 2em;
 
   @include MQ(S) {
@@ -180,6 +184,18 @@ body {
 
 .contact-info-container {
 	font-size: .8em;
+  font-weight: 400;
+  margin-top: 10em;
+  margin-bottom: 0em;
+  line-height: 1.6;
+
+  .col1 + .col1 {
+
+  @include MQ(S) {
+    margin-left: 8em;
+  }
+}
+
 }
 
 
