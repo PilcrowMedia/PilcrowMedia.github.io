@@ -90,8 +90,17 @@ textarea {
 }
 
 a {
-	color: #333;
+	color: #555;
 	text-decoration: none;
+    border-bottom: 1px solid white;
+
+  @include transition(all .3s);
+
+  &:hover {
+    color: black;
+  border-bottom: 1px solid #666;
+
+  }
 }
 
 
@@ -113,8 +122,10 @@ body {
 	padding: 2em 1em;
 	text-align: center;
 	background: white;
+      border-top: 5px solid black;
+      border-bottom: 5px solid black;
 
-    @include MQ(S) {
+    @include MQ(S-M) {
       font-size: 1.2em;
       border: 15px solid black;
       margin: 0em;
@@ -128,7 +139,7 @@ body {
 	margin: auto;
 	margin-top: 3em;
 	margin-bottom: 4em;
-    @include MQ(S) {
+    @include MQ(S-M) {
       width: 4em;
       margin-top: 10em;
     }
@@ -140,7 +151,7 @@ body {
 	margin-bottom: 5em;
 	font-size: 1.3em;
 
-  @include MQ(S) {
+  @include MQ(S-M) {
       width: 50%;
       max-width: 600px;
     margin-right: auto;
@@ -151,9 +162,9 @@ body {
 
 
 .venture-container {
-	font-size: .9em;
     font-weight: 600;
-      @include MQ(S) {
+    text-align: center;
+      @include MQ(S-M) {
         font-size: 1em;
     }
 
@@ -165,7 +176,7 @@ body {
   @include justify-content(space-between);
   @include flex-direction(column);
 
-  @include MQ(S) {
+  @include MQ(S-M) {
     @include flex-direction(row);
     @include justify-content(center);
   }
@@ -173,7 +184,7 @@ body {
 }
 
 .col1 {
-  @include MQ(S) {
+  @include MQ(S-M) {
     margin: 0 2em;
   }
 
@@ -182,7 +193,7 @@ body {
 .col1 + .col1 {
   margin-top: 2em;
 
-  @include MQ(S) {
+  @include MQ(S-M) {
     margin-top: 0;
   }
 }
@@ -194,12 +205,12 @@ body {
   margin-top: 10em;
   margin-bottom: 0em;
   line-height: 1.6;
-
+  text-align: center;
     .col1 {
 
-        @include MQ(S) {
-    margin:0 4.5em;
-      font-size: .75em;
+        @include MQ(S-M) {
+    margin:0 7.5em;
+      font-size: .85em;
 
   }
     }
